@@ -1,0 +1,514 @@
+/*CONFIGURACION INICIAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: linear-gradient(to bottom, #141e30, #243b55);
+    color: white;
+  }
+
+  /*SECCION HEADER*/
+
+  .conteiner-header {
+    background: radial-gradient(white, yellow);
+    border: solid black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .header-img {
+    width: 90px;
+    height: auto;
+    border: solid black;
+    margin: 0rem;
+  }
+
+  .header-secciones ul li {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    display: inline;
+    padding-left: 5px;
+    font-size: 1.5rem;
+    bottom: 1rem;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  .header-secciones ul li a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  /*SECCION SLIDER*/
+
+  .conteiner-empresa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  .conteiner-empresa img {
+    width: 90rem;
+    height: 60rem;
+  }
+
+  .trayectoria {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 3rem;
+  }
+
+  /*FORMATO DE TITULOS DE SECCIONES*/
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 5%;
+    text-decoration: underline overline coral;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  /*SECCION OBRAS*/
+
+  .conteiner-grid-obras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border: red dotted;
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .obras-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ver-mas {
+    display: none;
+  }
+
+  /*SECCION SERVICIOS*/
+
+  .servicios h4 {
+    padding-bottom: 5rem;
+    text-decoration: underline;
+  }
+
+  .servicios {
+    padding: 3rem;
+  }
+
+  .conteiner-servicios {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-size: 2rem;
+    padding-bottom: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /*SECCION FOOTER*/
+
+  .container-footer {
+    margin-left: 40rem;
+    margin-right: 40rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  .informacion img {
+    width: 5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .informacion {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /*SECCION REDES SOCIALES*/
+
+  .container-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 5rem;
+  }
+
+  .container-redes ul li {
+    display: inline;
+    bottom: 2rem;
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .container-redes img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  /*COPYRIGHT*/
+
+  .copyright {
+    size: 3rem;
+    color: white;
+    text-align: center;
+  }
+
+  /*------------------PAGE ---- OBRAS---------------*/
+
+  .gallery-menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+  }
+
+  .gallery-item img {
+    width: 60rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.8rem 1.2rem white;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*------------------PAGE ---- OBRAS EN EJECUCION ---------------*/
+
+  .gallery-obras-ejec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*-------------------------------------------------------------------------------RESPONSIVE---------------------------------------------------------------------*/
+
+/* mobile */
+@media only screen and (max-width: 450px) {
+  body {
+    background: linear-gradient(to bottom, #141e30, #243b55);
+    color: white;
+  }
+
+  .conteiner-header {
+    background: radial-gradient(white, yellow);
+    border: solid black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 0.5rem;
+    display: grid;
+    height: 6rem;
+  }
+
+  .header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .header-img {
+    width: 40px;
+    height: auto;
+    border: solid black;
+    margin: 0rem;
+  }
+
+  .header-secciones ul li a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  /*SECCION SLIDER*/
+
+  .conteiner-empresa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  .conteiner-empresa img {
+    width: 40rem;
+    height: auto;
+  }
+
+  .trayectoria {
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    line-height: 4rem;
+    padding: 2rem;
+    font-size: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0rem;
+  }
+
+  /*FORMATO DE TITULOS DE SECCIONES*/
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 5%;
+    text-decoration: underline overline coral;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  /*SECCION OBRAS*/
+
+  .conteiner-grid-obras {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    column-gap: 1rem;
+    row-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .obras-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img-rsp {
+    display: none;
+  }
+
+  .ver-mas {
+    border: white;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  /*SECCION SERVICIOS*/
+
+  .servicios h4 {
+    padding-bottom: 5rem;
+    text-decoration: underline;
+  }
+
+  .servicios {
+    padding: 3rem;
+  }
+
+  .conteiner-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    font-size: 2rem;
+    padding-bottom: 10rem;
+
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /*SECCION FOOTER*/
+
+  .container-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .informacion img {
+    width: 5rem;
+    height: auto;
+  }
+
+  .informacion {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /*SECCION REDES SOCIALES*/
+
+  .container-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 5rem;
+  }
+
+  .container-redes ul li {
+    display: inline;
+    bottom: 2rem;
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .container-redes img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  /*COPYRIGHT*/
+
+  .copyright {
+    size: 3rem;
+    color: white;
+    text-align: center;
+  }
+
+  /*------------------PAGE ---- OBRAS------MOBILE---------------*/
+
+  .gallery-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: 100%;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .gallery-item img {
+    width: 40rem;
+    height: 30rem;
+  }
+  .gallery-menu h2 {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  /*------------------PAGE ---- OBRAS------MOBILE---------------*/
+
+  .gallery-obras-ejec {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1rem;
+    row-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
